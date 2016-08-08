@@ -1,4 +1,4 @@
-<manifest alg="2" build="2015.2.1.352" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="www.softtrends.com" resolutions="1x" timestamp="1470673728979">
+<manifest alg="2" build="2015.2.1.352" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="www.softtrends.com" resolutions="1x" timestamp="1470679817320">
   <folder name="css">
     <file name="site_global.css" crc="3916556066"/>
     <file name="index.css" crc="3793752121" ref="index"/>
@@ -20,7 +20,7 @@
     <file name="form_check.php" crc="121412709" ref="index"/>
     <file name="form_throttle.php" crc="4268640971" ref="index"/>
     <file name="form_process.php" crc="444429785" ref="index"/>
-    <file name="form-u1445.php" crc="148702595" ref="index"/>
+    <file name="form-u1445.php" crc="4004977914" ref="index"/>
     <file name="jquery.scrolleffects.js" crc="511146689" ref="index"/>
     <file name="html5shiv.js" crc="4241844378" ref="index"/>
     <file name="require.js" crc="4108833657" ref="index"/>
@@ -55,5 +55,5 @@
     <file name="bigdata.jpg" crc="3912699222" ref="index"/>
     <file name="workshops.jpg" crc="8000881" ref="index"/>
   </folder>
-  <file name="index.html" crc="149120487" seo="true" mt="1470673693074" redirect="true"/>
+  <file name="index.html" crc="149120487" seo="true" mt="1470679781160" redirect="true"/>
 </manifest>
