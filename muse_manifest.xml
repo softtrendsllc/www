@@ -1,8 +1,8 @@
-<manifest alg="2" build="2015.2.1.352" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="www.softtrends.com" resolutions="1x" timestamp="1470680900425">
+<manifest alg="2" build="2015.2.1.352" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="www.softtrends.com" resolutions="1x" timestamp="1470683911997">
   <folder name="css">
     <file name="site_global.css" crc="3916556066"/>
-    <file name="index.css" crc="434553025" ref="index"/>
-    <file name="iefonts_index.css" crc="4197247389" ref="index"/>
+    <file name="index.css" crc="3826811190" ref="index"/>
+    <file name="iefonts_index.css" crc="308110925" ref="index"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="169078940" ref="index"/>
@@ -17,10 +17,6 @@
     <file name="musewpslideshow.js" crc="4265225696" ref="index"/>
     <file name="jquery.museoverlay.js" crc="4075157096" ref="index"/>
     <file name="touchswipe.js" crc="474750357" ref="index"/>
-    <file name="form_check.php" crc="121412709" ref="index"/>
-    <file name="form_throttle.php" crc="4268640971" ref="index"/>
-    <file name="form_process.php" crc="444429785" ref="index"/>
-    <file name="form-u1445.php" crc="4004977914" ref="index"/>
     <file name="jquery.scrolleffects.js" crc="511146689" ref="index"/>
     <file name="html5shiv.js" crc="4241844378" ref="index"/>
     <file name="require.js" crc="4108833657" ref="index"/>
@@ -39,11 +35,6 @@
     <file name="whatwedo2.png" crc="3917099610" ref="index"/>
     <file name="atlbg.jpg" crc="41268356" ref="index"/>
     <file name="netcore.jpg" crc="153605852" ref="index"/>
-    <file name="vv0697qwms.jpg" crc="263850015" ref="index"/>
-    <file name="u1456-17.png" crc="3959544612" ref="index"/>
-    <file name="u1456-17-r.png" crc="187171260" ref="index"/>
-    <file name="u1456-17-m.png" crc="324993531" ref="index"/>
-    <file name="u1456-17-fs.png" crc="237303229" ref="index"/>
     <file name="appex.jpg" crc="4226038097" ref="index"/>
     <file name="crossplatformmobileapps.jpg" crc="3821514125" ref="index"/>
     <file name="mobilefirst.jpg" crc="4125901949" ref="index"/>
@@ -55,5 +46,5 @@
     <file name="bigdata.jpg" crc="3912699222" ref="index"/>
     <file name="workshops.jpg" crc="8000881" ref="index"/>
   </folder>
-  <file name="index.html" crc="500712918" seo="true" mt="1470680878060" redirect="true"/>
+  <file name="index.html" crc="199777221" seo="true" mt="1470683897265" redirect="true"/>
 </manifest>
