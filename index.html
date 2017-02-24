@@ -23,31 +23,31 @@
         <ul class="nav nav-bordered nav-stacked">
             <li class="nav-header">SOFTTRENDS</li>
             <li>
-                <a href="#">HOME</a>
+                <a href="#home">HOME</a>
             </li>
             <li>
-                <a href="#">ABOUT</a>
+                <a href="#focus-area">ABOUT</a>
             </li>
             <li>
-                <a href="#">SERVICES</a>
+                <a href="#app-services">SERVICES</a>
             </li>
             <li>
-                <a href="#">DEMOS</a>
+                <a href="#demos">DEMOS</a>
             </li>
             <li>
-                <a href="#">ENGAGEMENTS</a>
+                <a href="#engage">ENGAGEMENTS</a>
             </li>
             <li>
-                <a href="#">BUILDPACKS</a>
+                <a href="#buildpacks">BUILDPACKS</a>
             </li>
         </ul>
     </div>
 
     <div class="stage" id="stage">
 
-        <div class="block block-inverse block-fill-height app-header" style="background-image: url(assets/Autumn-Atlanta-Skyline.png);">
+        <div id="home" class="block block-inverse block-fill-height app-header" style="background-image: url(assets/Autumn-Atlanta-Skyline.png);">
 
-            <nav class="navbar navbar-transparent navbar-fixed-top navbar-padded app-navbar p-t-md">
+            <nav class="js-nav navbar navbar-transparent navbar-fixed-top navbar-padded app-navbar p-t-md">
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed p-x-0" data-target="#stage" data-toggle="stage" data-distance="-250">
@@ -66,19 +66,19 @@
                                 <a href="#">HOME</a>
                             </li>
                             <li>
-                                <a href="#">ABOUT</a>
+                                <a href="#focus-area">ABOUT</a>
                             </li>
                             <li>
-                                <a href="#">SERVICES</a>
+                                <a href="#app-services">SERVICES</a>
                             </li>
                             <li>
-                                <a href="#">DEMOS</a>
+                                <a href="#demos">DEMOS</a>
                             </li>
                             <li>
-                                <a href="#">ENGAGEMENTS</a>
+                                <a href="#engage">ENGAGEMENTS</a>
                             </li>
                             <li>
-                                <a href="#">BUILDPACKS</a>
+                                <a href="#buildpacks">BUILDPACKS</a>
                             </li>
                         </ul>
                     </div>
@@ -98,7 +98,7 @@
             </div>
         </div>
 
-        <div class="block block-secondary p-b">
+        <div id="focus-area" class="block block-secondary p-b">
             <div class="container">
                 <div class="row app-align-center">
                     <div class="col-sm-12 text-center">
@@ -218,7 +218,7 @@
             </div>
         </div>
 
-        <div class="block block-secondary p-b-0 m-t-lg">
+        <div id="demos" class="block block-secondary p-b-0 m-t-lg">
             <div class="container">
                 <div class="row app-align-center">
                     <div class="col-sm-12 text-center">
@@ -308,7 +308,7 @@
                 </div>
             </div>
         </div>
-        <div class="block block-secondary p-b p-t-lg">
+        <div id="engage" class="block block-secondary p-b p-t-lg">
             <div class="container">
                 <div class="row app-align-center">
                     <div class="col-sm-12 text-center">
@@ -363,7 +363,7 @@
             </div>
         </div>
 
-        <div class="block block-secondary p-b p-t-lg">
+        <div id="app-services" class="block block-secondary p-b p-t-lg">
             <div class="container">
                 <div class="row app-align-center">
                     <div class="col-sm-12 text-center">
@@ -471,6 +471,19 @@
             </div>
         </div>
 
+
+        <div id="buildpacks" class="block block-secondary p-b">
+            <div class="container">
+                <div class="row app-align-center">
+                    <div class="col-sm-12 text-center">
+                        <h3 class="m-t-0"><strong>LATEST .NET BUILDPACKS FOR HEROKU</strong></h3>
+                        <p class="m-b-md small">CURRENT RELEASES EXPAND DATABASE SUPPORT FOR POSTGRES, MYSQL AND MICROSOFT SQL SERVER</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
         <div class="block block-secondary" style="background-image: radial-gradient(ellipse at center, rgba(38,38,38,0.66) ,rgba(0,0,0,0.8) 100%), url('/images/autumn-atlanta-skyline.jpg'); background-position: top left; background-attachment: fixed;">
             <div class="container">
                 <div class="row app-align-center">
@@ -570,9 +583,9 @@
 
             </div>
         </div>
-        
+
         <iframe class="m-t-lg" style="pointer-events:none;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105919.044380917!2d-84.2829660039163!3d33.941896180541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5a13a31727c1f%3A0xa83acc4a47f4b6fe!2s29+S+Peachtree+St%2C+Norcross%2C+GA+30071!5e0!3m2!1sen!2sus!4v1467673793549" width="100%" height="400" frameborder="0" allowfullscreen=""></iframe>
-        
+
         <footer class="block block-secondary block-inverse p-y text-center">
             <p><small>Copyright 2016. All Rights Reserved.</small></p>
         </footer>
@@ -589,6 +602,31 @@
             itemSelector: '.isotope-image',
             percentPosition: true,
         })
+
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 1) {
+                $(".js-nav").addClass("is-active");
+            } else {
+                $('.js-nav').removeClass('is-active');
+            }
+        });
+
+        $(function () {
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
     </script>
 </body>
 

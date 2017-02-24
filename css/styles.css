@@ -166,7 +166,21 @@ hr.dense {
 }
 
 
-/* general inverse overrides */
+.js-nav.is-active {
+    background: #fff;
+    color: #212121!important;
+    position: fixed;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.js-nav.is-active .navbar-nav li > a {
+    color: #212121;
+}
+
+.js-nav.is-active .navbar-brand {
+    color: #212121;
+}
 
 .block-inverse .text-muted {
     color: rgba(255, 255, 255, .7);
