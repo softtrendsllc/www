@@ -1,0 +1,323 @@
+/* navbar */
+
+.app-navbar {
+    font-weight: 300;
+    letter-spacing: .05em;
+    position: absolute;
+    font-size: 13px;
+}
+
+
+/* header block */
+
+.app-header {
+    display: table;
+    width: 100%;
+    height: 48em;
+}
+
+
+.block-title--border {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+hr.small {
+    width: 80px;
+    border-color: #212121;
+}
+hr.dense {
+    width: 80px;
+    border-color: #fff;
+    border-width: 3px;
+}
+.fa {
+    color: #212121;
+}
+
+.carousel-control.left {
+    left: 0;
+    top: 50%;
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
+}
+
+.carousel-control.right {
+    right: 0;
+    top: 50%;
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
+}
+
+.carousel:hover .carousel-control.left, .carousel:hover .carousel-control.right {
+    opacity: 1;
+}
+
+
+/* pull quote block */
+
+.app-high-praise img {
+    width: 100%;
+}
+
+
+/* brand ribbon block */
+
+.app-ribbon {
+    background: #2595FF;
+}
+
+.app-ribbon .container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: -30px;
+}
+
+.app-ribbon img {
+    margin: 0 10px 30px;
+}
+
+
+/* marketing grid block */
+
+.app-block-marketing-grid .container {
+    margin-bottom: -60px;
+}
+
+.app-marketing-grid .m-b {
+    margin-bottom: 10px !important;
+}
+
+@media (max-width: 768px) {
+    .app-marketing-grid .m-b-lg {
+        margin-bottom: 40px !important;
+    }
+}
+
+.page-section {
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.fes7-img-cont {
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    padding: 0;
+    top: 0;
+}
+
+.fes7-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    z-index: 0;
+    width: 100%;
+    display: block;
+    background-size: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/* price plan block */
+
+.app-price-plans {
+    background-color: #F4F5F6;
+}
+
+.app-price-plans .container {
+    margin-bottom: -60px;
+}
+
+
+/* footer block */
+
+.app-footer {
+    background-color: #262F36;
+}
+
+.app-footer a {
+    color: #fff;
+}
+
+
+/* general block overrrides */
+
+@media (max-width: 768px) {
+    .block .lead {
+        line-height: 1;
+    }
+    .block h3 {
+        line-height: 1.15;
+    }
+}
+
+
+/* general inverse overrides */
+
+.block-inverse .text-muted {
+    color: rgba(255, 255, 255, .7);
+}
+
+.block-inverse .block-bg-img {
+    background-color: transparent;
+}
+
+
+/* general btn overrides */
+
+.btn-lg {
+    font-size: 18px;
+}
+
+.block-secondary .btn-lg {
+    width: 100%;
+}
+
+.btn-lg:not(.btn-block) {
+    padding: 12px 50px;
+}
+
+@media (min-width: 768px) {
+    .btn-lg:not(.btn-block) {
+        width: auto;
+    }
+}
+
+
+/* ie10+ */
+
+@media (min-width: 768px) {
+    .app-align-center {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+.isotope-grid {
+    position: relative;
+    margin: 0 auto;
+}
+
+.isotope-image {
+    width: 25%;
+    min-width: 200px;
+    height: 225px;
+    border: none;
+    background: #fff no-repeat center center;
+    background-size: contain;   
+}
+
+.isotope__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #262626;
+    color: #fff;
+    opacity: 0;
+    text-align: center;
+    -webkit-transition: opacity 220ms ease;
+    transition: opacity 220ms ease;
+    padding: 10px 7%;
+    
+}
+
+.isotope-image:hover .isotope__overlay {
+    opacity: 1;
+}
+
+.isotope-image--2x {
+    width: 50%;
+    min-width: 330px;
+}
+
+.speech-bubble {
+    position: relative;
+    background: #fff;
+    padding: 15px 10px;
+    border-radius: 6px;
+}
+
+.speech-bubble:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #fff;
+	border-width: 20px;
+	margin-left: -20px;
+}
+.card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.card {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #262626;
+    padding-bottom: 25px;
+    position: relative;
+}
+
+.card > .btn {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.card-title {
+    background: #262626;
+    padding: 15px 5px;
+}
+
+.card-body {
+    padding: 15px;
+    line-height: 1.8;
+    margin-bottom: 30px
+}
+
+.c-w {
+    color: white;
+}
+
+.f-w-300 {
+    font-weight: 300;
+}
+.f-w-400 {
+    font-weight: 400;
+}
+.f-w-500 {
+    font-weight: 500;
+}
+.f-w-700 {
+    font-weight: 700;
+}
