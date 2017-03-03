@@ -163,6 +163,12 @@ hr.dense {
     .block h3 {
         line-height: 1.15;
     }
+    .isotope-image--2x {
+        max-width: none
+    }
+    .app-header {
+        padding: 60px 10px;
+    }
 }
 
 
@@ -180,6 +186,9 @@ hr.dense {
 
 .js-nav.is-active .navbar-brand {
     color: #212121;
+}
+.js-nav.is-active .navbar-toggle .icon-bar {
+    background: #212121;
 }
 
 .block-inverse .text-muted {
@@ -228,15 +237,18 @@ hr.dense {
 .isotope-grid {
     position: relative;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .isotope-image {
-    width: 25%;
+    flex: 1 1 25%;
     min-width: 200px;
     height: 225px;
     border: none;
     background: #fff no-repeat center center;
     background-size: contain;   
+    position: relative;
 }
 
 .isotope__overlay {
@@ -260,8 +272,8 @@ hr.dense {
 }
 
 .isotope-image--2x {
-    width: 50%;
-    min-width: 330px;
+    flex-grow: 2;
+    min-width: 300px;
 }
 
 .speech-bubble {
@@ -334,4 +346,27 @@ hr.dense {
 }
 .f-w-700 {
     font-weight: 700;
+}
+
+@media screen and (max-width: 600px ) {
+    .carousel-indicators {
+        bottom: -35px;
+    }
+    
+    .carousel-inner .img-responsive {
+        max-height: 225px;
+    }
+    
+    .carousel-inner .item {
+        text-align: center
+    }
+    
+    .carousel-inner .item hr {
+        text-align: center;
+        float: none!important
+    }
+    
+    .carousel-control {
+        display: none;
+    }
 }

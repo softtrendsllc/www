@@ -47,7 +47,7 @@
 
         <div id="home" class="block block-inverse block-fill-height app-header" style="background-image: url(assets/Autumn-Atlanta-Skyline.png);">
 
-            <nav class="js-nav navbar navbar-transparent navbar-fixed-top navbar-padded app-navbar p-t-md">
+            <nav class="js-nav navbar navbar-transparent navbar-fixed-top navbar-padded app-navbar">
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed p-x-0" data-target="#stage" data-toggle="stage" data-distance="-250">
@@ -598,10 +598,14 @@
     <script src="scripts/toolkit.js"></script>
     <script src="scripts/application.js"></script>
     <script>
-        $('.isotope-grid').isotope({
-            itemSelector: '.isotope-image',
-            percentPosition: true,
-        })
+//        $('.isotope-grid').isotope({
+//            itemSelector: '.isotope-image',
+//            percentPosition: true,
+//            masonry: {
+//            columnWidth: 25,
+//            isFitWidth: true
+//            }
+//        })
 
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();

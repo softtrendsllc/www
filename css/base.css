@@ -8825,13 +8825,13 @@ img.zoom-img {
   background-color: #ffffff;
 }
 .stage-shelf {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   z-index: 0;
   width: 250px;
-  padding-top: 30px;
+  padding-top: 45px;
   background-color: #f2f2f2;
 }
 .stage-shelf-right {
