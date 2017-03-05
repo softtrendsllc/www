@@ -175,7 +175,6 @@ hr.dense {
 .js-nav.is-active {
     background: #fff;
     color: #212121!important;
-    position: fixed;
     -webkit-transition: all 200ms ease;
     transition: all 200ms ease;
 }
@@ -267,7 +266,7 @@ hr.dense {
     
 }
 
-.isotope-image:hover .isotope__overlay {
+.isotope-image:hover .isotope__overlay, .isotope-image.is-open .isotope__overlay {
     opacity: 1;
 }
 
@@ -368,5 +367,8 @@ hr.dense {
     
     .carousel-control {
         display: none;
+    }
+    .isotope-image {
+        flex: 1 1 200px;
     }
 }

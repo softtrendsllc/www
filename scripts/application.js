@@ -1,3 +1,7 @@
+$('.isotope-image').click( function() {
+    $('.isotope-image').removeClass('is-open');
+    $(this).addClass('is-open');
+})
 
 // back to top button - docs
 $(function () {

@@ -3098,5 +3098,9 @@
 
     $target.stage('toggle')
   })
+  
+  $('#sidebar a').on('click', function() {
+    $('#stage').stage('toggle');
+  })
 
 }(jQuery);
