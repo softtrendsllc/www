@@ -382,7 +382,7 @@
                             <h4 class="c-w">HEROKU BUTTONS</h4>
                             <hr class="dense">
                             <p class="m-b">Our Heroku Buttons demonstrate how to build ASP.NET apps on Heroku</p>
-                            <img src="images/w32_88.png" alt="">
+                            <span class="isotope__clickable" data-toggle="modal" data-target="#myModal"></span>
                         </div>
                     </div>
                     <div class="isotope-image" style="background-image: url(images/herokubuildpacks.png)">
@@ -391,7 +391,7 @@
                             <hr class="dense">
                             <p>We publish &amp; maintain the Microsoft .NET Core &amp; ASP.NET</p>
                             <p class="m-b">Core Heroku Buildpacks</p>
-                            <img src="images/w32_88.png" alt="">
+                            <span class="isotope__clickable" data-toggle="modal" data-target="#myModal"></span>
                         </div>
                     </div>
                     <div class="isotope-image" style="background-image: url(images/poc.jpg)">
@@ -399,7 +399,7 @@
                             <h4 class="c-w">APPLICATION POCs</h4>
                             <hr class="dense">
                             <p class="m-b">We will help you kickstart you next web or mobile project with a Proof of Concept</p>
-                            <img src="images/w32_88.png" alt="">
+                            <span class="isotope__clickable" data-toggle="modal" data-target="#myModal"></span>
                         </div>
                     </div>
                     <div class="isotope-image" style="background-image: url(images/bigdata.jpg)">
@@ -407,7 +407,7 @@
                             <h4 class="c-w">DATA &amp; ANALYTICS</h4>
                             <hr class="dense">
                             <p class="m-b">Whether a complex DB migration project or Cassandra as-a-Service, we can help</p>
-                            <img src="images/w32_88.png" alt="">
+                            <span class="isotope__clickable" data-toggle="modal" data-target="#myModal"></span>
                         </div>
                     </div>
                     <div class="isotope-image isotope-image--2x" style="background-image: url(images/whatwedo2.png)">
@@ -415,7 +415,7 @@
                             <h4 class="c-w">COMMUNITIES &amp; PORTALS</h4>
                             <hr class="dense">
                             <p class="m-b">Want a highly customized Communities template? We've got you covered with ours</p>
-                            <img src="images/w32_88.png" alt="">
+                            <span class="isotope__clickable" data-toggle="modal" data-target="#myModal"></span>
                         </div>
                     </div>
                     <div class="isotope-image" style="background-image: url(images/appex.jpg)">
@@ -423,7 +423,7 @@
                             <h4 class="c-w">APPEXCHANGE APPS</h4>
                             <hr class="dense">
                             <p class="m-b">Many of our AppExchange apps leverage not only Salesforce, but also the Heroku platform</p>
-                            <img src="images/w32_88.png" alt="">
+                            <span class="isotope__clickable" data-toggle="modal" data-target="#myModal"></span>
                         </div>
                     </div>
                     <div class="isotope-image" style="background-image: url(images/herokuconnect.jpg)">
@@ -431,7 +431,7 @@
                             <h4 class="c-w">HEROKU CONNECT</h4>
                             <hr class="dense">
                             <p class="m-b">We help you not only leverage Heroku Connect for sync, but customize it to fit your needs</p>
-                            <img src="images/w32_88.png" alt="">
+                            <span class="isotope__clickable" data-toggle="modal" data-target="#myModal"></span>
                         </div>
                     </div>
                     <div class="isotope-image" style="background-image: url(images/crossplatformmobileapps.jpg)">
@@ -439,7 +439,7 @@
                             <h4 class="c-w">CROSS-PLATFORM MOBILE&nbsp; APPS</h4>
                             <hr class="dense">
                             <p class="m-b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae odio id sapien.</p>
-                            <img src="images/w32_88.png" alt="">
+                            <span class="isotope__clickable" data-toggle="modal" data-target="#myModal"></span>
                         </div>
                     </div>
                     <div class="isotope-image" style="background-image: url(images/mobilefirst.jpg)">
@@ -447,7 +447,7 @@
                             <h4 class="c-w">MOBILE-FIRST WEB APPLICATIONS</h4>
                             <hr class="dense">
                             <p class="m-b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae odio id sapien.</p>
-                            <img src="images/w32_88.png" alt="">
+                            <span class="isotope__clickable" data-toggle="modal" data-target="#myModal"></span>
                         </div>
                     </div>
                     <div class="isotope-image isotope-image--2x" style="background-image: url(images/developerworkshops.png)">
@@ -455,7 +455,7 @@
                             <h4 class="c-w">HEROKU DEVELOPER WORKSHOPS</h4>
                             <hr class="dense">
                             <p class="m-b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae odio id sapien.</p>
-                            <img src="images/w32_88.png" alt="">
+                            <span class="isotope__clickable" data-toggle="modal" data-target="#myModal"></span>
                         </div>
                     </div>
                 </div>
@@ -592,7 +592,15 @@
     </div>
     <!-- DO NOT REMOVE -->
 
-
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/isotope.min.js"></script>
     <script src="scripts/toolkit.js"></script>
@@ -606,7 +614,11 @@
 //            isFitWidth: true
 //            }
 //        })
-
+        $('.isotope__clickable').click( function() {
+            $image = $(this).closest('.isotope-image').attr('style');
+            $('#myModal .modal-header').attr('style', $image);
+        });
+        
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
 

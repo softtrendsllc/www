@@ -30,6 +30,7 @@ hr.dense {
     width: 80px;
     border-color: #fff;
     border-width: 3px;
+    margin: 5px auto;
 }
 .fa {
     color: #212121;
@@ -236,11 +237,16 @@ hr.dense {
 .isotope-grid {
     position: relative;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 .isotope-image {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 25%;
     flex: 1 1 25%;
     min-width: 200px;
     height: 225px;
@@ -263,7 +269,7 @@ hr.dense {
     -webkit-transition: opacity 220ms ease;
     transition: opacity 220ms ease;
     padding: 10px 7%;
-    
+    font-size: 13px;
 }
 
 .isotope-image:hover .isotope__overlay, .isotope-image.is-open .isotope__overlay {
@@ -271,8 +277,28 @@ hr.dense {
 }
 
 .isotope-image--2x {
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
     flex-grow: 2;
     min-width: 300px;
+}
+
+.isotope__clickable {
+    background-color: #fff;
+    background-image: url('../images/b32_88.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    border: 1px solid #fff;
+}
+.isotope__clickable:hover {
+    background-color: transparent;
+    background-image: url('../images/w32_88.png');
 }
 
 .speech-bubble {
@@ -369,6 +395,15 @@ hr.dense {
         display: none;
     }
     .isotope-image {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 200px;
         flex: 1 1 200px;
     }
+}
+
+.modal-header {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
 }

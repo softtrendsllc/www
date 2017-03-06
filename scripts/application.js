@@ -1,6 +1,14 @@
-$('.isotope-image').click( function() {
+$('.isotope-image').on( 'click mouseenter', function() {
     $('.isotope-image').removeClass('is-open');
     $(this).addClass('is-open');
+});
+
+$('.isotope__clickable').mouseenter( function () {
+    $image = $(this).data('image');
+    $original = $(this).attr('src');
+    $(this).attr('src', $image);
+}).mouseleave(function () {
+    $(this).attr('src', $original);
 })
 
 // back to top button - docs
